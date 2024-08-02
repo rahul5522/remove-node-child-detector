@@ -1,3 +1,1 @@
-const startDebugger = require('./debugger');
-
-module.exports = startDebugger;
+export const startDebugger = require('./debugger');

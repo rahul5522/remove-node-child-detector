@@ -6,13 +6,62 @@ A lightweight, framework-agnostic debugging tool designed to identify DOM-relate
 
 ## Features
 
+- Finding which dom node cause the transalation error is very time consuming process, this debugger does this job easy for you.
 - Identifies and logs DOM manipulation errors
 - Highlights problematic DOM elements visually
 - Works with any JavaScript framework or vanilla JS
 - Customizable debugging options
-- Minimal performance impact when enabled
 
 ## Installation
 
 ```bash
 npm install remove-child-node-error-debugger
+```
+
+Once the package is installed, import startDebugger function from package. 
+
+```bash 
+import  { startDebugger }  from "remove-child-node-error-debugger";
+```
+
+## Example
+
+- To start debugging, place the startDebugger function at the top level of your application, such as in "index.js" or "app.js".
+
+```bash
+import {useState} from "react";
+import "./App.css";
+
+import  { startDebugger }  from "remove-child-node-error-debugger";
+
+function App() {
+
+  const [show, setShow] = useState(false);
+
+  // Only use for debugging purpose
+  startDebugger();
+
+  return (
+    <div className="App">
+      <div style={{ "margin-top": "10px"}}>
+        <button onClick={() => setShow((prev) => !prev)} style={{ "margin-bottom": "15px"}}>Toggle Me</button>
+        <br />
+        {show && 'TESTING'}
+        <span>Lorem Ipsum</span>
+    </div>
+    </div>
+  );
+}
+
+export default App;
+```
+- In the above example, I have attempted to reproduce the React "DOMException: Failed to execute 'removeChild' on 'Node'" error by translating the page using Google Translate. When this error occurs, the startDebugger function will highlight the DOM node causing the error. You can also see which node caused the error in the console.
+
+## Output
+
+[![Watch the demo](https://photos.app.goo.gl/3QEDnv9dyh3Y2pAn8)](https://youtu.be/vt5fpE0bzSY)
+
+Link : https://youtu.be/vt5fpE0bzSY
+
+
+
