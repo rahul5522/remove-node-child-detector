@@ -1,17 +1,28 @@
 {
     "name": "remove-child-node-error-debugger",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A debugging tool designed to identify DOM-related issues, specifically the 'Failed to execute removeChild on Node' error caused by third-party libraries such as Google Translate in any JavaScript environment.",
     "main": "src/index.js",
     "scripts": {
-      "build": "babel src -d dist"
+        "build": "babel src -d dist"
     },
-    "keywords": ["javascript", "removeChild", "node", "debugging", "dom", "google-translate-error", "debugger", "react", "reeact-google-translate-error", "React DOMException"],
+    "keywords": [
+        "javascript",
+        "removeChild",
+        "node",
+        "debugging",
+        "dom",
+        "google-translate-error",
+        "debugger",
+        "react",
+        "reeact-google-translate-error",
+        "React DOMException"
+    ],
     "author": "Rahul Waghmare",
     "license": "MIT",
     "devDependencies": {
-      "@babel/cli": "^7.x.x",
-      "@babel/core": "^7.x.x",
-      "@babel/preset-env": "^7.x.x"
+        "@babel/cli": "^7.24.8",
+        "@babel/core": "^7.25.2",
+        "@babel/preset-env": "^7.x.x"
     }
-  }
+}
