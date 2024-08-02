@@ -59,7 +59,7 @@ export default App;
 
 ## Output
 
-[![Watch the demo](https://photos.app.goo.gl/3QEDnv9dyh3Y2pAn8)](https://youtu.be/vt5fpE0bzSY)
+[Screencast from 03-08-24 12:21:40 AM IST.webm](https://github.com/user-attachments/assets/5d183b95-4c47-40aa-ab49-98e6542da485)
 
 Link : https://youtu.be/vt5fpE0bzSY
 
